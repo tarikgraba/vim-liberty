@@ -28,6 +28,7 @@ syn keyword     cdslibStatement       INCLUDE SOFTINCLUDE UNDEFINE nextgroup=cds
 syn region      cdslibArg start="\S" end="$" skipwhite contained keepend contains=cdslibVar
 
 syn region cdslibComment  start=/#/ end=/$/ contains=cdslibTodo display oneline
+syn region cdslibComment  start=/--/ end=/$/ contains=cdslibTodo display oneline
 "syn region cdslibString   start=/"/ end=/"/ contains=cdslibVar contained
 "syn region cdslibString   start=/'/ end=/'/ contains=cdslibVar contained
 syn match  cdslibVar      "\$\%(\k\+\|\d\)"
